@@ -4,13 +4,38 @@ padding-bottom: 10px;
 background:#f7f7f7;
 }
 
+h1 {
+padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 22px;
+	padding-top: 5px;
+}
+h3 {
+    font-size: 17px;
+}
+h4 {
+    font-size: 13px;
+}
+
+.ui-widget-content a { /* to overwrite jquery-ui */
+    color: #0088CC;
+    text-decoration: none;
+}
+
+.ui-widget-content a:hover { /* to overwrite jquery-ui */
+    color: #0088CC;
+    text-decoration: underline;
+}
+
 /* Custom container */
 .container {
 margin: 0 auto;
 max-width: 1000px;
 }
 .container > hr {
-margin: 60px 0;
+margin: 40px 0;
 }
 
 /* Customize the navbar links to be fill the entire space of the .navbar */
@@ -19,14 +44,21 @@ padding: 0;
 }
 .navbar .nav {
 margin: 0;
-display: table;
+/*display: table;*/
 width: 100%;
 }
+.navbar .nav li {
+display: inline-block;
+width: 20%; /* Modifier ce pourcentage si le nombre n d'éléments du menu change (100/n) */
+/*float: none;*/
+}
+/*
 .navbar .nav li {
 display: table-cell;
 width: 1%;
 float: none;
 }
+*/
 .navbar .nav li a {
 font-weight: bold;
 text-align: center;
@@ -59,10 +91,6 @@ padding-top: 0;
 font-size: 100%;
 }
 
-h1 {
-padding-bottom: 10px;
-}
-
 .ui-widget {
 	font-size: 100%;
 }
@@ -71,4 +99,34 @@ padding-bottom: 10px;
 	margin-top: 5px;
 	margin-bottom: 10px;
 }
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+	color: #ff0000;
+	width: 100%;
+	background-image: none;
+	background: none;
+}
+
+
+.footer {
+	margin-top: 10px;
+	margin-left: 10px;
+	font-size: 11px;
+}
+
+.quick_explanation_video_form label {
+	display: inline-block;
+}
+.quick_explanation_video_form input {
+	margin: 0 3px 4px 0;
+}
+
+
+
+
+
+
 
