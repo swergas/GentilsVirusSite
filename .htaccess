@@ -1,0 +1,4 @@
+#REDIRECTION de www.gentilsvirus.org vers gentilsvirus.org
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.gentilsvirus\.org$ [NC]
+RewriteRule ^(.*)$ "http\:\/\/gentilsvirus\.org\/$1" [QSA,R=301,L]
