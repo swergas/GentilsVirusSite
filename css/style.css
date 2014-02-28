@@ -65,6 +65,12 @@ text-align: center;
 border-left: 1px solid rgba(255,255,255,.75);
 border-right: 1px solid rgba(0,0,0,.1);
 }
+
+/* fix ugly line on the left of a selected menu item */
+.navbar .nav li.active a {
+border-left: 0;
+}
+
 .navbar .nav li:first-child a {
 border-left: 0;
 border-radius: 3px 0 0 3px;
@@ -114,6 +120,12 @@ font-size: 100%;
 .footer {
 	margin-top: 10px;
 	margin-left: 10px;
+	font-size: 11px;
+	text-align: center;
+}
+
+.bottom_menu {
+	text-align: center;
 	font-size: 11px;
 }
 
