@@ -24,6 +24,26 @@
 			</a>
 		</div>
           
+          <div class="dropdown" style="margin-bottom:20px; margin-top:-50px; width:162px;">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                Langue / Language
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <?php
+                    $languages = array(
+                    array("code"=>"EN", "name"=>"English"),
+                    /*array("code"=>"ES", "name"=>"Español"),
+                    array("code"=>"DE", "name"=>"Deutsch")*/
+                    );
+                    foreach ($languages as $key => $lng)
+                    {
+                        echo('<li role="presentation"><a role="menuitem" tabindex="-1" href="' . $translates[$key] . '" rel="alternate" hreflang="' . $lng["code"] . '">' . $lng['name'] . '</a></li>');
+                    }
+                ?>
+              </ul>
+            </div>
+          
       <!--nav-->
         <div class="navbar">
           <div class="navbar-inner">
@@ -32,7 +52,7 @@
                 <?php
                     foreach ($nav as $key => $nav_display)
                     {
-                        if($key == $nav_active)
+                        if(isset($nav_active) && $key == $nav_active)
                             echo('
                                 <li class="active">
                                     <a href="' . $nav_links[$key] . '">' . $nav_display . '</a>
@@ -60,7 +80,7 @@
                 <?php
                     foreach ($sub_nav as $key => $sub_nav_display)
                     {
-                        if($key == $sub_nav_active)
+                        if(isset($sub_nav_active) && $key == $sub_nav_active)
                             echo('
                                 <li class="active">
                                     <a href="' . $sub_nav_links[$key] . '">' . $sub_nav_display . '</a>
@@ -79,7 +99,11 @@
         <?php } ?>
       
       
-      
+      <?php if(isset($bloc_video) || isset($bloc_newsletter) )
+                $span_size = 8;
+            else
+                $span_size = 12;
+      ?>
       <!--contenu principal-->
       <div class="row-fluid show-grid">
         <div class="span<?php echo($span_size);?> niceblock">

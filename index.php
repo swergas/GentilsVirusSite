@@ -1,13 +1,18 @@
 <?php
     //params
-    $title = "Les gentils virus pour la democratie";
+    $title = "Les Gentils Virus pour la Démocratie";
     $description = "site des gentils virus";
+
+    $translates = array(
+        "/EN/index.php"/*,
+        "/ES/index.php",
+        "DE/index.php"*/
+    );
         
     $nav = array("Accueil", "Le constat", "Les solutions", "Participez !", "Actualités");
     $nav_links = array("/index.php", "/le_constat.php", "/les_solutions.php", "/participez.php", "/actualites.php");
     $nav_active = 0;
-        
-    $span_size = 8;
+
     $h1 = "Accueil";
 
     $bloc_video = true;

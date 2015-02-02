@@ -1,7 +1,11 @@
 <?php
     //params
-    $title = "Les gentils virus pour la democratie";
+    $title = "Les Gentils Virus pour la Démocratie";
     $description = "site des gentils virus";
+
+    $translates = array(
+        "/EN/news.php"
+    );
         
     $nav = array("Accueil", "Le constat", "Les solutions", "Participez !", "Actualités");
     $nav_links = array("/index.php", "/le_constat.php", "/les_solutions.php", "/participez.php", "/actualites.php");
@@ -11,7 +15,6 @@
     $sub_nav_links = array("#", "https://github.com/swergas/GentilsVirusSite/commits/master", "http://wiki.gentilsvirus.org/index.php/Sp%C3%A9cial:Modifications_r%C3%A9centes", "http://wiki.gentilsvirus.org/index.php/Cat%C3%A9gorie:Evenements");
     $sub_nav_active = 0;
 
-    $span_size = 12;
     $h1 = "Actualités des Gentils Virus";
 ?>
 
