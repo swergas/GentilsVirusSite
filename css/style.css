@@ -136,9 +136,54 @@ font-size: 100%;
 	margin: 0 3px 4px 0;
 }
 
+.logo_img
+{
+    width: 30%;
+    min-width: 150px;
+    max-width: 250px;
+}
 
+#logo_container
+{
+    text-align: center;
+    margin-bottom: 10px;
+}
 
+.dropdown #lang
+{
+    margin-bottom: 20px;
+    margin-top: -50px;
+    width: 162px;
+}
 
+#piwik_img
+{
+    border: 0;
+}
 
+.quick_explanation_video_time_value
+{
+    width: 100px;
+    margin-bottom: 0;
+}
 
+.email.newsletter
+{
+    width: 90%;
+}
 
+.response
+{
+    display: none;
+}
+
+.hidden_field
+{
+    position: absolute;
+    left: -5000px;
+}
+
+#subscribe_button
+{
+    width: 95%;
+}
