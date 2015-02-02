@@ -1,61 +1,19 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <title>Les Gentils Virus pour la Démocratie</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="Quentin Grimaud">
+<?php
+    //params
+    $title = "Les gentils virus pour la democratie";
+    $description = "site des gentils virus";
 
-    <link rel="icon" type="image/png" href="img/gentilsvirus_favicon.png">
-	<link href="css/smoothness/jquery-ui-1.10.3.custom.css" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    $nav = array("Accueil", "Le constat", "Les solutions", "Participez !", "Actualités");
+    $nav_links = array("/index.php", "/le_constat.php", "/les_solutions.php", "/participez.php", "/actualites.php");
+    $nav_active = 3;
+        
+    $span_size = 12;
+    $h1 = "Participez !";
+?>
 
-    <link href="http://github.com/swergas/GentilsVirusSite/commits/master.atom" rel="alternate" title="Modifications récentes du site (flux Atom)" type="application/atom+xml" />
-  </head>
+<?php include("structure/beforeContent.php");?>
 
-  <body>
-
-    <div class="container">
-
-      <div class="masthead">
-		<div style="text-align: center; margin-bottom: 10px;">
-			<a href="index.html">
-				<img src="img/logo.png" style="width: 30%; min-width: 150px; max-width: 250px;" alt="Logo Gentils Virus pour la démocratie" title="Les Gentils Virus pour la démocratie"/>
-			</a>
-		</div>
-        <div class="navbar">
-          <div class="navbar-inner">
-            <div class="container">
-              <ul class="nav pull-middle" role="navigation">
-                <li>
-					<a href="index.html">Accueil</a>
-				</li>
-                <li>
-					<a href="le_constat.html">Le constat</a>
-				</li>
-                <li>
-					<a href="les_solutions.html">Les solutions</a>
-				</li>
-                <li class="active">
-					<a href="participez.html">Participez !</a>
-				</li>
-				<li>
-					<a href="actualites.html">Actualit&eacute;s</a>
-				</li>
-              </ul>
-            </div>
-          </div>
-        </div><!-- /.navbar -->
-    
-      </div>
-      
-      
-      
-      <div class="row-fluid show-grid">
-        <div class="span12 niceblock">
+<article>
 			<h1>Participez !</h1>
 
 <h2>Entrez en contact avec les Gentils Virus près de chez vous</h2>
@@ -304,53 +262,7 @@ Le réseau social des Gentils Virus <a href="http://ggouv.fr" target="_blank">gg
 
 
         </div>
-        
-      </div>
-      <br/><br/>
+	
+</article>
 
-
-      <div class="footer">
-        &copy; Les Gentils Virus
-		- 
-        Les textes des pages de ce site sont mis à disposition sous la <a href="http://creativecommons.org/licenses/by/3.0/fr/" target="_blank">Licence Creative Commons Attribution 3.0 France</a>.
-      </div>
-
-      <div class="bottom_menu">
-      	<a href="a_propos.html">&Agrave; propos</a>
-      	-
-      	<a href="contact.php">Contact</a>
-        -
-      	<a href="http://github.com/swergas/GentilsVirusSite/commits/master.atom" title="Modifications récentes du site (flux Atom)"><img src="img/Rss-feed.svg.png" /></a>
-      </div>
-
-    </div> <!-- /container -->
-    
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-
-    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-	<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
-
-    <!-- Piwik -->
-	<script type="text/javascript"> 
-	  var _paq = _paq || [];
-	  _paq.push(['trackPageView']);
-	  _paq.push(['enableLinkTracking']);
-	  (function() {
-	    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.gentilsvirus.fr//";
-	    _paq.push(['setTrackerUrl', u+'piwik.php']);
-	    _paq.push(['setSiteId', 1]);
-	    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
-	    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-	  })();
-
-	</script>
-	<noscript><p><img src="http://piwik.gentilsvirus.fr/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
-	<!-- End Piwik Code -->
-
-  </body>
-</html>
+<?php include("structure/afterContent.php");

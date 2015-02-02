@@ -1,0 +1,24 @@
+
+          
+          <div class="dropdown" style="margin-bottom:20px; margin-top:-50px; width:162px;">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                Langue / Language
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <?php
+                    foreach ($translates as $key => $lng)
+                    {
+                        echo('<li role="presentation"><a role="menuitem" tabindex="-1" href="' . $lng['path'] . '" rel="alternate" hreflang="' . $lng['code'] . '">' . $lng['name'] . '</a></li>');
+                    }
+                ?>
+              </ul>
+            </div>
+
+
+
+    $translates = array(
+        array("name" =>"English", "code"=>"EN" ,"path"=>"/EN/index.php"),
+        array("name" =>"Español", "code"=>"ES" ,"path"=>"/ES/index.php"),
+        array("name" =>"Deutsch", "code"=>"DE" ,"path"=>"/DE/index.php")   
+    );
