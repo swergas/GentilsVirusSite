@@ -9,7 +9,7 @@
 			<form action="#" class="quick_explanation_video_form">
 
 				J'ai &nbsp;
-				<select class="quick_explanation_video_time_value" style="width: 100px; margin-bottom: 0;">
+				<select class="quick_explanation_video_time_value">
 					<option value="http://player.vimeo.com/video/52009258?title=0&amp;portrait=0&amp;badge=0&amp;color=ff9933">1 minute</option>
 					<option value="http://www.youtube.com/embed/_XoBYJXbmZE">14 minutes</option>
 					<option value="http://www.youtube.com/embed/oN5tdMSXWV8?feature=player_embedded">18 minutes</option>
@@ -33,14 +33,14 @@
                 
             <div class="mc-field-group">
                 <label for="mce-EMAIL"></label>
-                <input type="email" value="" name="EMAIL" class="required email" style="width: 90%;" id="mce-EMAIL" placeholder="votre_adresse@email.com">
+                <input type="email" value="" name="EMAIL" class="required email newsletter" id="mce-EMAIL" placeholder="votre_adresse@email.com">
             </div>
                 <div id="mce-responses" class="clear">
-                    <div class="response" id="mce-error-response" style="display:none"></div>
-                    <div class="response" id="mce-success-response" style="display:none"></div>
+                    <div class="response" id="mce-error-response"></div>
+                    <div class="response" id="mce-success-response"></div>
                 </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -5000px;"><input type="text" name="b_6e50b5ef3f07d6baf9d24a654_6216750698" tabindex="-1" value=""></div>
-                <div class="clear"><input type="submit" value="S'inscrire" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success" style="width:95%;"></div>
+                <div class="hidden_field"><input type="text" name="b_6e50b5ef3f07d6baf9d24a654_6216750698" tabindex="-1" value=""></div>
+                <div class="clear"><input id="subscribe_button" type="submit" value="S'inscrire" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success"></div>
             </form>
             </div>
 
@@ -96,7 +96,7 @@
 	  })();
 
 	</script>
-	<noscript><p><img src="http://piwik.gentilsvirus.fr/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+	<noscript><p><img id="piwik_img" src="http://piwik.gentilsvirus.fr/piwik.php?idsite=1" alt="" /></p></noscript>
 	<!-- End Piwik Code -->
 
 

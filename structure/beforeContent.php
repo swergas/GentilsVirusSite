@@ -18,13 +18,13 @@
     <div class="container">
       <!--header-->
       <div class="masthead">
-		<div style="text-align: center; margin-bottom: 10px;">
+		<div id="logo_container">
 			<a href="index.html">
-				<img src="img/logo.png" style="width: 30%; min-width: 150px; max-width: 250px;" alt="Logo Gentils Virus pour la démocratie" title="Les Gentils Virus pour la démocratie"/>
+				<img id="logo_img" src="img/logo.png" alt="Logo Gentils Virus pour la démocratie" title="Les Gentils Virus pour la démocratie"/>
 			</a>
 		</div>
           
-          <div class="dropdown" style="margin-bottom:20px; margin-top:-50px; width:162px;">
+          <div class="dropdown" id="lang">
               <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
                 Langue / Language
                 <span class="caret"></span>
